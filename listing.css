@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 body{
@@ -35,8 +34,6 @@ h1{
     float: right; 
     margin: 19px;
     justify-content: space-around;
-    /* margin-top: 25px; 
-     margin-left: 25px 45px; */
 }
 
 a{
@@ -59,6 +56,9 @@ a{
 
 .headingText{
     text-align:center;
+    /* margin: 15px 300px; */
+    display: inline-block;
+    width: 100%;
     font-size: 40px;
     margin-top: 15px;
     font-weight: bold;
@@ -84,7 +84,6 @@ a{
     font-size: 20px;
     border-radius: 5px;
     padding-bottom: 20px;
-    /* height:700px; */
 }
 
 .selection{
@@ -98,7 +97,7 @@ a{
 h6{
     font-weight: bold;
     font-size: 23px;
-    margin: 25px 35px;
+    margin: 25px 30px;
     margin-top: 45px;
     font-family: proxima-nova, sans-serif;
 }
@@ -115,9 +114,6 @@ h6{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* display: inline-block; */
-    /* height: 1999; */
-     /* border: 2px solid hotpink; */
 }
 
 .resto{
@@ -127,10 +123,6 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 3px solid red; 
-    border: 1px solid rgb(111, 178, 255);
-    height: 20%;
-    justify-content: center; */
 }
 
 .resto:hover{
@@ -141,26 +133,16 @@ h6{
 
 .resto_img{
     height: 270px;
-    width: 310px;
+    width: 80%;
     opacity: 1;
     border-radius: 18px;
     margin: 5px 15px;
-    /* display: inline-block; 
-    will-change: transform, opacity;
-    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s; */
 }
 
 
 .info{
     width: 60%;
     margin: 5px 15px;
-    /* height: 232px; 
-    display: inline-block;  
-    border: 2px solid blue; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    text-align: center; */
 }
 
 h4{
@@ -191,21 +173,6 @@ h5{
     font-family: proxima-nova, sans-serif;
 }
 
-button{
-    width: 110px;
-    height: 40px;
-    font-size: 15px;
-    cursor: pointer;
-    float: right;
-    /* display: block;
-    margin: 15px; 
-    margin-top: 50px ; */
-}
-
-button:hover{
-    background-color:rgb(202, 219, 238) ;
-}
-
 
 /*footer CSS*/
 #footer{
@@ -222,3 +189,115 @@ button:hover{
 #footText{
     text-align: center;
 }
+
+@media (max-width:1200px){
+    #contentDiv
+    {   
+        width: 70%;
+        margin-left : 8%;
+        float : left;
+        padding: 5px 5px;
+    }
+    .resto{
+        width: 44%;
+        margin: 15px 6px;
+    }
+
+    #filterDiv{
+    width: 15%;
+    }
+    
+}
+
+@media  (max-width:1000px){
+    .headingText{
+        width: 100%;
+        font-size: 32px;
+        margin-top: 13px; 
+    }
+
+    h6{
+        font-size: 18px;
+        margin: 25px 18px;
+      
+    }
+
+    .resto{
+        width: 45%;
+        margin: 15px 6px;
+    }
+}
+
+@media (max-width:900px){
+    #content{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 90%;
+   }
+   #header{
+    height: 70px;
+    background-color:rgb(14 49 166);
+    width: 800%;
+    }
+    #filterDiv{
+        width: 75%;
+        display: flex;
+    }
+    .filterclass{
+        margin: 5px 26px;
+    }
+    #contentDiv{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .resto{
+        width: 85%;
+        
+    }
+}
+
+    @media  (max-width:700px){
+        .filterclass{
+            margin: 5px 8px;
+        }
+    }
+    @media  (max-width:500px){
+        .filterclass{
+            margin: 5px 0px;
+            font-size: 15px;
+        }
+        .headingText{
+            font-size: 22px;
+        }
+        h5{
+            font-size: 14px;
+        }
+        .resto_img{
+            height: 230px;
+        }
+        .info{
+            margin: 3px 8px;
+        }
+    }
+
+    @media (max-width:500px){
+        .filterclass{
+            margin: 5px 0px;
+            font-size: 15px;
+        }
+        .headingText{
+            font-size: 22px;
+        }
+        h5{
+            font-size: 14px;
+        }
+        .resto_img{
+            height: 230px;
+        }
+        .info{
+            margin: 3px 8px;
+        }
+    }
